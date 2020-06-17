@@ -1,9 +1,10 @@
-# HEAD
+# 🗿 HEAD
 
 > A list of everything that \*could\* go in the `<head>` of your document
 
-[![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=flat-square)](https://github.com/joshbuchea/HEAD/graphs/contributors)
+[![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Follow @joshbuchea on Twitter](https://img.shields.io/badge/Follow_@joshbuchea-blue?logo=twitter&logoColor=white&style=flat-square)](https://twitter.com/joshbuchea)
 
 ## Table of Contents
 
@@ -20,6 +21,7 @@
   - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
+  - [QQ/Wechat](#qqwechat)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
@@ -33,11 +35,11 @@
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
 - [Other Formats](#other-formats)
-- [Translations](#translations)
-- [Contributing](#contributing)
+- [Translations](#-translations)
+- [Contributing](#-contributing)
   - [Contributors](#contributors)
-- [Author](#author)
-- [License](#license)
+- [Author](#-author)
+- [License](#-license)
 
 ## Recommended Minimum
 
@@ -53,6 +55,15 @@ Below are the essential elements for any web document (websites/apps):
  -->
 <title>Page Title</title>
 ```
+
+**meta charset** - defines the encoding of the website, utf-8 is the standard
+
+**meta name="viewport"** - viewport settings related to mobile responsiveness
+
+**width=device-width** means that it will use the physical width of the device (instead of zooming out) which is good with mobile friendly pages
+
+**initial-scale=1** is the initial zoom, 1 means no zoom
+
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -279,6 +290,7 @@ These elements provide information for how a document should be perceived, and r
 ## Social
 
 ### Facebook Open Graph
+> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup) 
 
 ```html
 <meta property="fb:app_id" content="123456789">
@@ -293,11 +305,11 @@ These elements provide information for how a document should be perceived, and r
 <meta property="article:author" content="">
 ```
 
-- 📖 [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - 📖 [Open Graph protocol](http://ogp.me/)
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
+> With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. [More about Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
 
 ```html
 <meta name="twitter:card" content="summary">
@@ -372,6 +384,17 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ```
 
 - 📖 [oEmbed format](https://oembed.com/)
+
+### QQ/Wechat
+
+Users share web pages to qq wechat will have a formatted message
+
+```html
+<meta itemprop="name" content="share title">
+<meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
+<meta name="description" itemprop="description" content="share content">
+```
+- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -558,8 +581,9 @@ Minimum required xml markup for `browserconfig.xml`:
 
 **[⬆ back to top](#table-of-contents)**
 
-## Translations
+## 🌐 Translations
 
+- 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
 - 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
 - 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
 - 🇩🇪 [German](https://github.com/Shidigital/HEAD)
@@ -572,7 +596,7 @@ Minimum required xml markup for `browserconfig.xml`:
 
 **[⬆ back to top](#table-of-contents)**
 
-## Contributing
+## 🤝 Contributing
 
 **Open an issue or a pull request to suggest changes or additions.**
 
@@ -601,11 +625,22 @@ You may want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) an
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
-## Author
+## 👤 Author
 
-**[Josh](https://twitter.com/joshbuchea)**
+**Josh Buchea**
 
-## License
+- Twitter: [@joshbuchea](https://twitter.com/joshbuchea)
+- Github: [@joshbuchea](https://github.com/joshbuchea)
+
+## Show your support
+
+Please ⭐️ this repository if this project helped you!
+
+<a href="https://www.patreon.com/joshbuchea">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
+## 📝 License
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
